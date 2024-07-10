@@ -32,12 +32,18 @@ This resource provides detailed images and simulations of the 6502 microprocesso
 
 Key Takeaways:
 1- The Visual 6502 project simulates the 6502 microprocessor. The simulation provides an in-depth look at the processor’s operations.
+
 2- The 3193A is a support chip in the NES, essential for the console's operation.
+
 3- The Motorola 6800 chip was designed before the MOS 6501 and 6502.The project provided images showing the stages of delayering a single 6800 chip.
+
 4- The 341-0064A chip in the Apple Lisa controls the keyboard, mouse, RTC, and soft power switch. It is a customized National Semiconductor COP421. Images of the chip were taken and stitched together to provide a detailed view of its structure. These images help in understanding the chip’s functions and its ROM contents.
 
 Personal insights or reflections:
 Watching the simulations and examining the images helped me understand how these chips process instructions and work together. Zooming in on the details was very educational.
+
 The high-resolution images showed how complex these chips are. 
+
 The detailed images revealed how many tiny parts come together to make a chip work which was very interesting.
+
 This experience encouraged me to explore more about how different chips and components work.
