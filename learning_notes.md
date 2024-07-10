@@ -15,4 +15,5 @@ Routing Data: The Multiplexer (MUX) directs processed data to the correct parts 
 Personal insights or reflections:
 Watching each part of the CPU work in real-time helped me understand how complex instructions are processed.
 It made everything I’ve learned about CPUs much clearer and more interesting. I tried changing some numbers myself in the Program Counter and watched how the CPU reacted differently.
-All this hands-on practice helped me understand things much better than before. Now, I can picture how CPUs work when I read about them.
+Feedback: This hands-on practice assignment helped me understand things much better than before. Now, I can picture how CPUs work when I read about them.
+I also learned how to use Github and document my work.
