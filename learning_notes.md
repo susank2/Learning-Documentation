@@ -36,6 +36,7 @@ Summary of content:
 This resource provides detailed images and simulations of the 6502 microprocessor and the Atari 10444D 'TIA' chip and Motorola 6800,Apple Lisa 341-0064A (COP421) and more. It helps explain how these chips function and the history behind it.
 
 Key Takeaways:
+
 1- The Visual 6502 project simulates the 6502 microprocessor. The simulation provides an in-depth look at the processor’s operations.
 
 2- The 3193A is a support chip in the NES, essential for the console's operation.
@@ -45,6 +46,7 @@ Key Takeaways:
 4- The 341-0064A chip in the Apple Lisa controls the keyboard, mouse, RTC, and soft power switch. It is a customized National Semiconductor COP421. Images of the chip were taken and stitched together to provide a detailed view of its structure. These images help in understanding the chip’s functions and its ROM contents.
 
 Personal insights or reflections:
+
 1- Watching the simulations and examining the images helped me understand how these chips process instructions and work together. Zooming in on the details was very educational.
 
 2- The high-resolution images showed how complex these chips are. 
