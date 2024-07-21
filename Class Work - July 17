@@ -1,0 +1,85 @@
+Part 1: Research Paper Exploration
+Summary
+Key Objectives: The paper, "A Survey of Computer Architecture Simulation Techniques and Tools" by Ayaz Akram and Lina Sawalha, reviews various computer architecture simulators, comparing their accuracy and performance. The main goals are:
+Provide a comprehensive survey of existing computer architecture simulation techniques.
+Classify and analyze different simulators based on their models and features.
+To compare the accuracy and performance of six modern simulators: gem5, MARSS×86, Multi2Sim, PTLsim, Sniper, and ZSim.
+Methodology:
+The authors reviewed and categorized different simulators based on their models and features. They looked at how flexible, accurate, and fast each simulator is. They looked at the flexibility, accuracy, and performance of each simulator
+They also measured the errors in the results from the six simulators and compared them based on different factors like configurability, simulation speed, and output accuracy. The comparison looks at how flexible these tools are, what details they can show, and how accurate they are.
+
+
+Findings:
+The study revealed significant differences in accuracy and performance among the simulators. Key findings include:
+gem5 and Sniper were found to be the most accurate simulators.
+ZSim was the fastest in terms of simulation speed.
+The paper pointed out challenges like slow simulation speeds and accuracy issues, particularly in branch prediction and cache misses, and suggested solutions like using sampled and statistical simulation techniques.
+
+
+The paper discusses how simulators are crucial for researchers who are developing new ideas.
+These tools are important for studying processor performance and analyzing how much power different models consume. Simulators allow researchers to see how a system would function, identify any issues, and confirm the effectiveness of architectural changes before they are implemented.
+The authors emphasize the importance of checking the accuracy of simulation results to make sure they're trustworthy.
+In summary, This paper is really useful, especially for new researchers in computer architecture. It gives them a good start in understanding which tools might be best for their projects and what challenges they might face when using these tools.
+Critical Analysis
+Three Major Advantages:
+
+Detailed Simulation Models: The paper discusses how simulators like gem5 and Multi2Sim can provide in-depth information about various microarchitectural events. This means these tools can show what happens inside a processor, how it uses memory, and how it manages data coming in and going out.
+These detailed models help researchers understand exactly how different parts of a computer work and how they use energy, which is important for making computers more efficient and powerful.
+Support for Multiple Architectures: Another advantage is that many simulators support multiple instruction set architectures (ISAs). For instance, gem5 can handle several types, like ARM, x86, and others. This is great for students and researchers because they can experiment with and learn about different kinds of computer systems and comparing ISAs whenever needed
+ without being stuck with just one type.
+
+Accuracy: The paper talks about how to make sure these tools are giving true results, which is very important for trustworthy research. Simulators like Sniper and ZSim have shown low error rates compared to actual hardware, making them reliable tools for research.
+Validated simulators like Sniper and ZSim have shown low error rates when compared to actual hardware, making them trustworthy for architectural exploration.
+
+Two Limitations
+
+Slow Simulation Speed:
+One major limitation mentioned is the slow speed of detailed simulations. Since Detailed models require a lot of computation, this leads to a long simulation time, Which can be a problem especially when it comes to working on big and complex systems as it can delay research and development. 
+For example, gem5, while accurate, is slower compared to other simulators like ZSim.
+
+Rapid Technological Advancements: Computer technology changes very quickly, with new processor designs and features coming out all the time. This fast pace can make simulators outdated quickly unless they are regularly updated. Keeping a simulator up to date with the newest technology requires continuous effort and is complex and slow because it involves lots of programming, testing, and checking to make sure everything works right.  If this isn’t managed well, the simulators might not be able to accurately reflect the latest hardware technologies, which can affect their usefulness for research in computer architecture.
+
+Application
+Hands-On Simulation Projects: Using tools like gem5 and Multi2Sim in course projects can give students practical experience. Students can create different processor designs and test them by simulating performance under various conditions. This helps them understand how changes in architecture impact performance and power use, making the connection between what they learn in class and real-world applications.
+Accuracy and Validation Checks: Students can compare simulation results with real hardware to find and fix differences. For example, they could use gem5 to simulate a processor and then check how close the results are to real hardware performance. This helps students learn to adjust the simulator for better accuracy and understand why validation is important in computer architecture research.
+Part 2: Evaluating emulsiV
+Overview:
+emulsiV is a web-based  tool that's designed to help students and educators see and understand how computers work on the inside. It simulates and shows what happens inside a computer when it processes instructions. The main goal of emulsiV is to make learning about computer architecture simpler and more interactive. This tool uses clear graphics to show you what happens inside the computer, making it easier to understand how data moves around and how decisions are made inside the system. The tool’s interactive features allow users to actively engage with the material, helping them better grasp and remember how different parts of a computer function together. It allows users to compare different computing methods to learn about their strengths and weaknesses.
+Overall, emulsiV turns difficult computer science concepts into clear, interactive learning experiences, making it a great resource for beginners wanting to learn about how computers function.
+
+
+Advantages of Using emulsiV for Visualization and Simulation
+1. Interactive Learning Environment
+One of the main advantages of using emulsiv is its interactive platform that makes learning more engaging. Users can see computer processes happen in real-time as they follow instructions. This helps students understand complex computer operations more clearly and remember them better.
+This visual approach helps users understand complex concepts more easily than traditional text-based learning methods.
+
+Comparison with Traditional Tools:
+Key Differences emulsiV vs Logisim
+Performance:
+emulsiV: Focuses on visualizing how assembly code runs inside a CPU.
+Logisim: Allows users to design and simulate digital circuits with real-time feedback.
+Ease of Use:
+emulsiV: Very beginner-friendly with a straightforward interface.
+Logisim: Also user-friendly, but needs some basic understanding of digital circuits.
+Application Areas:
+emulsiV: Best for learning computer architecture basics.
+Logisim: Great for learning digital logic design and creating complex circuit designs.
+
+Practical Application Using emulsiV:
+Project Idea: Learning Computer Basics with emulsiV
+
+Goals of the Project:
+The goal is to help middle school students understand the basics of how computers work, including the parts like the CPU, memory, and how data moves around. The project will use emulsiV to show these concepts in a simple visual way.
+
+How emulsiV Helps:
+emulsiV lets students see how computers process information, making it easier to understand.
+ The tool is interactive, which makes learning fun and keeps students interested.
+Students can try out different things in emulsiV to see what happens, which helps them learn by doing.
+
+References:
+Implementation of PWM Using RISC-V Processor Publisher: Prem Kanjarbhat; Pooja Chandaragi; Uday V Wali (https://ocul-it.primo.exlibrisgroup.com/discovery/fulldisplay?docid=cdi_ieee_primary_10582142&context=PC&vid=01OCUL_IT:UO&lang=en&search_scope=ONTECHLIBSPLUS&adaptor=Primo%20Central&tab=ONTECHLIBSPLUS&query=any,contains,emulsiV%20%20&mode=basic
+
+https://github.com/logisim-evolution/logisim-evolution
+
+https://www.youtube.com/watch?v=QqBmVEBhdco
+https://cdn.hackaday.io/files/1814287762215552/logisim_tutorial.pdf
