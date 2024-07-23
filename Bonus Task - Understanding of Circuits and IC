@@ -1,0 +1,63 @@
+Definition: Circuits where the output depends solely on the current inputs.
+Design Procedure:
+Determine input variables and outputs.
+Create a Truth Table with all possible input combinations.
+Derive and simplify Boolean expressions for outputs.
+Implement the simplified Boolean expressions using logic gates.
+2. Boolean Functions to Logic Circuits:
+Convert Boolean functions to circuits using OR, AND, and NOT gates.
+3. Optimizing Circuits:
+Simplify Boolean expressions to reduce complexity, cost, and energy requirements.
+Methods: Boolean algebra, Karnaugh Maps, Quine-McCluskey.
+4. Medium Scale Integration (MSI):
+Purpose: Perform common digital functions such as multiplexing, encoding, and decoding.
+Examples:
+Adders: Perform binary addition.
+Encoders: Convert input lines to binary code (e.g., Decimal to BCD encoder).
+Decoders: Convert binary code to output lines (e.g., 2-to-4 line decoder).
+5. Encoders:
+Definition: Combinational circuits converting input lines into binary codes.
+Types:
+Priority Encoder: Prioritizes inputs; highest priority input determines the output.
+Decimal to BCD Encoder: Converts decimal numbers to binary-coded decimal.
+Octal to Binary Encoder: Converts octal numbers to binary.
+Hexadecimal to Binary Encoder: Converts hexadecimal numbers to binary.
+6. Decoders:
+Definition: Combinational circuits converting binary codes to output lines.
+Types: Code converters, BCD to seven-segment decoders, relay actuators.
+7. Sequential Circuits:
+Definition: Circuits where output depends on current inputs and previous states, requiring memory elements.
+Types:
+Asynchronous Sequential Circuits: Outputs change independently of clock signals.
+Synchronous Sequential Circuits: Outputs change in sync with clock signals.
+8. Sequential Synthesis:
+Process: Convert FSM (Finite State Machine) models into sequential circuits by defining state diagrams, optimizing state codes, and implementing memory blocks.
+9. Example - Vending Machine Controller:
+Description: Controls coin processing, product delivery, and change return.
+FSM Representation: Models state transitions based on inputs and outputs from coin receivers, coin returns, and pop drop devices.
+State Assignment: Ensures optimal circuit design by assigning binary codes to states.
+
+Flowcharts and State Diagrams: Flowcharts can be converted into State Diagrams, which help visualize how systems behave and transition between states.
+
+Algorithmic State Machines (ASMs): Used to design digital circuits like counters, showing how systems change states step by step.
+
+Counters
+Ripple Counters:
+
+2-bit: Counts 0 to 3.
+3-bit: Counts 0 to 7.
+Decade (BCD): Counts 0 to 9.
+
+Synchronous Counters:
+
+2-bit: Counts up or down in sync.
+4-bit: Counts 0 to 15 up or down.
+
+Sequential LSI Components
+ROM-Based Microcontrollers:
+
+General Purpose: Uses ROM for state and output control.
+Counter-Based: Uses counters for simple state sequences.
+Preset Counter-Based: Adds preset lines for state jumps.
+MUX-Based: Uses multiplexers for complex state sequences.
+Microprocessors: General-purpose processors with fixed designs, used to control and process data, like the Intel 4004.
