@@ -1,0 +1,153 @@
+Security in Computer Architecture
+
+Introduction
+Our world is more connected than ever, and computer systems play a big role in our daily lives.
+Security in computer architecture is essential to protect against unauthorized access, data breaches, and various cyber threats. As we rely more on technology, the need to secure these systems has become more important.
+Traditional methods of computer security are no longer enough. We need to move beyond just responding to threats after they happen 
+This paper explores the evolution of security measures in computer architecture, highlighting key concepts, challenges, advancements, and real-world applications. m old methods to new ones and what's coming next. By understanding the basics and the challenges, we can build stronger computer systems that can handle threats now and in the future
+Literature Review
+Traditional Security Measures
+Security in computer systems has changed a lot over time. In the past, we relied on methods like firewalls, intrusion detection systems (IDS), user authentication, and data encryption to keep our systems safe. These methods help block unauthorized access and detect problems after they happen. However, they have some weaknesses.
+Firewalls: Firewalls act as barriers to keep unauthorized users out but can't predict how dangerous a threat might be.
+Intrusion Detection Systems (IDS): IDS can find threats but only respond after the threat is detected.
+User Authentication: This is essential but can still be tricked by social engineering attacks and password breaches.
+Data Encryption: This scrambles information to keep it safe, but if the encryption keys are stolen, the protection is weakened
+To deal with new cyber threats, hardware security solutions like TPM, secure boot, secure enclaves, and hardware encryption have been created. Now, computer security relies more on hardware defenses than just software, making it stronger and better at stopping threats.
+Historical context
+The history of computer security started with the very first computing devices. Over time computing moved from mechanical to electronic, new security risks emerged, leading to the need for better protection measures.  The creation of the first program-controlled computer in the 1940s and the rise of stored-program electronic computers in the 1950s were  the start of modern computer architecture, featuring general-purpose, electronic.
+
+Modern Security Architectures
+Modern computers have security built-in to keep them safe. This includes secure memory, protected communication paths, and safe input/output interfaces. These components work together to prevent unauthorized access and data breaches, keeping your computer and data protected.
+For example, securing the CPU means taking steps to stop unauthorized code from running and to protect data from being changed without permission.
+Techniques such as memory encryption and trusted execution environments (TEEs) help protect sensitive information within the CPU, To secure buses and input/output interfaces, data transfers are encrypted, and access control mechanisms are used to prevent unauthorized access to data.  These measures are crucial for keeping computer systems secure.
+
+FPGA-based systems are vulnerable to security threats. They can be copied, hacked, or disrupted, which can be dangerous. To stay safe, we need to design them securely, use encryption, and control access. To stay safe, we need to design them securely, use encryption, and control access. Continuous monitoring is also important to detect and respond to threats in real time
+Security in Cloud Computing
+In cloud computing, security is very important because of risks like data breaches and system interruptions. Cloud systems can be attacked by malware like viruses and spyware, so their design needs to focus on security. According to Fangfang Dang, Lijing Yan, and Yang Yang (2023), cloud security has several layers:
+Infrastructure Layer: Uses virtualization to manage resources efficiently.
+Cloud Service Layer: Provides virtual machines and databases that need strong security.
+Cloud Access Layer: Controls network communication and ensures only authorized users can access the system.
+Cloud User Layer: Acts as the interface between users and providers, requiring secure login processes.
+Hardware monitors data in real-time, and software uses encryption to keep data safe. This makes cloud services faster and more reliable.
+
+
+
+
+
+Challenges in Building Secure Systems
+Building a secure system is very challenging because modern software and hardware are complex. The complexity of software, hardware, and application-specific integrated circuits (ASICs) has outpaced our current methods of checking for security issues (Meng et al., 2018). Without checking the entire system, we can’t be sure it’s secure.
+For example, the Firefox browser has 36 million lines of code, making it likely to have security issues (Meng et al., 2018). Similarly, the Linux kernel has more vulnerabilities as it becomes more complex.
+The Meltdown and Spectre attacks show how these vulnerabilities can be exploited (Meng et al., 2018). Additionally, modern processor chips are made through complex processes with multiple vendors, increasing the chance of malicious logic or circuits being secretly included.
+Emerging Security Challenges
+In recent years, security has become a crucial aspect of computer architecture design. Ponomarev (2020) notes that security research in this area focuses on both offensive and defensive strategies. Offensive research looks for new ways to attack systems, while defensive research develops methods to guard against these attacks. Three main types of attacks are especially significant: transient execution attacks, code reuse attacks, and rowhammer attacks.
+Transient Execution Attacks and Side-channels
+Transient execution attacks, like Meltdown and Spectre, exploit weaknesses in modern processors. Meltdown and Spectre are two attacks that exploit how computers process information. Meltdown uses error handling delays to access sensitive data, Spectre tricks the system into running unauthorized code paths.
+These attacks take advantage of how the computer’s microarchitecture works to secretly leak data. Newer attacks, like Microarchitectural Data Sampling (MDS), target internal CPU buffers directly, getting past its defenses.
+This highlights the need for extra security measures at the hardware level to address the risks of speculative execution and side-channel leaks.
+Code Reuse Attacks
+Code reuse attacks (CRAs) are a major threat to computer security.They use existing code to do malicious actions, making them hard to detect. To fight these attacks, experts use defenses like Control Flow Integrity (CFI). But new techniques like Block-Oriented Programming (BOP) can bypass these defenses. Experts use a defense called CFI to stop attacks. But, a new technique called BOP can bypass it. BOP uses big chunks of code to get around security, making it a new challenge
+
+
+
+
+Rowhammer attacks 
+Rowhammer attacks are a big threat to computer security. Attackers repeatedly access memory rows, causing bit flips in nearby rows, which can lead to security breaches. Even though memory checks and ECC bits help, advanced attacks like RAMBleed can still leak data
+To protect against these attacks, experts need to understand them well. By studying these attacks, they can make computers more secure.
+Ponomarev says that knowing how attacks work is key to stopping them. One way to do this is to build security features into the computer's hardware, such as its instruction sets and microarchitectures. This can provide a stronger defense against attacks than software-based solutions alone. This approach can lead to more secure computers and better protection of sensitive information.
+Emerging Hardware Security Challenges
+In the paper "A Survey on Hardware Security: Current Trends and Challenges," Sonia Akter, Kasem Khalil, and Magdy Bayoumi discuss today's key issues in hardware security. With the global supply chain for Integrated Circuits (ICs) and the complexity of modern devices, securing hardware is more important than ever.
+Attacks like Hardware Trojans can insert harmful changes into hardware designs, making them hard to detect. When companies outsource hardware production, there’s a risk of intellectual property theft, cloning, and unauthorized copying, which can compromise the security and integrity of the entire system. These attacks are dangerous threats and can be performed using techniques like Simple Power Analysis (SPA) and Differential Power Analysis (DPA).
+To address these threats, many hardware security measures have been developed. These include both invasive and non-invasive detection techniques,  Control Flow Integrity (CFI) to ensure programs run correctly, and memory encryption with Trusted Execution Environments (TEEs) to protect sensitive data within the CPU. But, Implementing these advanced security measures can increase energy consumption and reduce performance, especially in small IoT devices, the benefits of enhanced security far outweigh the costs
+Analysis of Security in Computer Architecture
+Security in computer architecture involves several critical components and mechanisms designed to protect the integrity, confidentiality, and availability of data
+Securing computer architecture is complex and crucial, especially as technology rapidly evolves. This analysis breaks down the key concepts, challenges, and advancements in this field, making it easy to understand.
+
+
+Key Concepts
+Security Models:
+In the past, security models were created to protect against specific threats. Early models like Bell-LaPadula focused on keeping information confidential, which was important for government and military use. As more people started using computers for personal and business use, new models like Biba were developed to ensure that data is accurate and trustworthy, which is critical for fields like finance and healthcare.
+Trusted Computing Base (TCB):
+The TCB includes all the essential components, like hardware, software, and firmware, that enforce the security policy of a computer system. These parts must work reliably and securely to prevent breaches and protect the system.
+Challenges
+Network Diversification and Digital Transformation:
+Complex Networks: As companies adopt digital transformation, their networks become more varied and complex. They have to manage many different types of devices, like mobile phones, personal gadgets, and IoT devices. This variety makes it challenging to secure the network.
+Example: In the Target data breach, hackers attacked the heating and cooling system first. They then moved to the payment system because of weaknesses in network segmentation. This shows the importance of keeping networks separate and closely monitored.
+Mitigation Strategies: Organizations are adopting micro-segmentation, breaking the network into small, isolated sections to prevent breaches from spreading. Layered security, which adds multiple defense layers, also helps protect against attacks.
+Security Impact of IoT Devices and IT/OT Convergence:
+IoT Devices: The rapid growth of IoT devices, which often have weak security features, introduces new vulnerabilities. Integrating IT and OT networks increases the likelihood of cyber threats spreading.
+Mitigation: Organizations should use strong authentication and encryption for IoT devices, regularly update and patch them, and segregate them from critical systems using network segmentation. Monitoring network traffic for suspicious activity can help detect breaches early.
+Real-World Example: The Ukraine power grid attack, which left thousands in the dark, is a sobering example of the potential consequences for national security and business continuity. Organizations can learn from this attack by keeping critical systems separate, using strong authentication, and regularly checking for security weaknesses.
+
+
+Security Operations: Managing security is hard because there are many different systems to keep track of. This makes it expensive and difficult to keep everything safe. Additionally, the cybersecurity skills gap leaves many organizations with insufficient staff to handle the growing number of security alerts.. To stay on top of security, leaders need a clear view of what's going on so they can make good decisions and respond to threats quickly.
+ 
+Advancements
+Hardware-Based Security:
+Advances in hardware security, such as Trusted Platform Module (TPM) and Intel’s Software Guard Extensions (SGX), provide additional layers of protection at the hardware level.
+Trusted Platform Module (TPM) is a small chip in a device that helps keep it secure. It stores cryptographic keys used to encrypt and decrypt data, ensuring that sensitive information remains secure. also makes sure that the device starts up with trusted software, preventing any malicious code from running. This helps prevent hackers from gaining access to the device at a basic level.
+
+Machine Learning for Security:
+Machine learning (ML) technologies are increasingly being used to enhance security by detecting and responding to threats in real-time.
+Benefits: ML algorithms can analyze large volumes of data to identify patterns and anomalies that may indicate security threats. For example, if a user's login behavior changes drastically, the system can flag it as suspicious and prompt additional verification steps. This helps in identifying and mitigating potential threats quickly.
+Automated Responses: ML can also automate responses to detected threats. For instance, if an ML system identifies a phishing attack, it can automatically block the email and alert the security team. This reduces the time needed to respond to threats and minimizes potential damage.
+
+Zero Trust Architecture in Computer Architecture
+The Zero Trust model is a new approach in cybersecurity that impacts computer architecture. Unlike traditional models that assume everything inside an organization's network is safe, Zero Trust assumes threats can be both inside and outside the network. This model requires strict verification for every access request, no matter where it comes from.
+
+Implementing Zero Trust Architecture in computer systems:
+Verify Explicitly: Always authenticate and authorize access based on multiple data points, This means checking and approving access based on multiple factors, like who you are, where you're located, and whether your device is secure. 
+
+
+Use Least Privilege Access: Limit access for users and systems using strict controls and minimizing permissions. Give access only when needed and for a limited time.
+
+
+ Assume Breach: Design systems to minimize damage from potential breaches and prevent hackers from moving around the network.
+Google's BeyondCorp and Microsoft's Azure are prime examples of Zero Trust in practice, prioritizing security and minimizing risk
+Real-World Applications of Security in Computer Architecture
+To understand the practical use of security concepts in computer architecture, let's explore how these concepts are applied in real-world scenarios.
+
+Analyzing Real-World Security Breaches 
+In 2017, the Equifax breach exposed sensitive data of 147 million people because they didn't fix a vulnerability. This incident shows how important it is to keep software updated and have strong security rules to prevent such issues.
+Machine Learning for Intrusion Detection in Networks
+Companies like Palo Alto Networks use machine learning to spot and stop security threats in real-time. They use algorithms that analyze network traffic patterns to spot unusual activity that could indicate a cyberattack
+Threat Detection: Machine learning models can detect unusual patterns like access attempts at odd hours, from unknown locations, unexpected system configuration changes, and other suspicious activities.
+Automated Response:When a threat is found, machine learning systems can automatically take action, like isolating affected systems or blocking bad IP addresses to stop further damage.
+Sony PlayStation Network Attack:
+In 2011, the Sony PlayStation Network was hacked, exposing personal information of 77 million users. This attack showed the importance of strong security in online gaming. Sony responded by upgrading its security, including:
+Better encryption to protect user data
+Stronger authentication processes to prevent unauthorized access
+
+Trusted Computing Base (TCB) in Real-World Applications
+Military and government agencies use a Trusted Computing Base (TCB) to keep sensitive information safe. The TCB makes sure all parts of the system are secure and trustworthy, preventing unauthorized access or tampering. This keeps sensitive information confidential and secure during transmission and storage.
+
+Intel Software Guard Extensions (SGX) in Cloud Computing
+Microsoft Azure uses Intel SGX to make data safer. SGX creates a safe place in the computer's memory to protect important information like customer details and passwords. This keeps it safe even if the computer gets hacked. It's very important for companies that handle personal information and money. SGX also helps keep apps safe from hackers, which is especially important for banks and hospitals.
+
+
+
+Conclusion
+As we use technology more and more, we need better ways to protect against hacking, data breaches, and other cyber threats. Old security methods like firewalls and passwords are not enough anymore. This paper looks at how computer security has changed over time, from simple to advanced methods like TPM and SGX. These new methods provide better protection against new threats and are a big improvement over older methods.
+
+Modern security designs use multiple layers of protection, including secure memory, protected communication paths, and trusted execution environments (TEEs). These measures work together to prevent unauthorized access and data breaches, showing the complex defenses needed to protect today's systems.
+Computers have changed a lot over time. Each change has brought new security risks. We need to improve security measures to keep up with changes. Just like computers get better, security methods need to get better too.
+
+Building secure systems is hard because modern technology is complex. Recent attacks like Meltdown and Spectre show us that we need to constantly improve security. New challenges like IoT devices and combined IT/OT networks bring new vulnerabilities. We need strong security measures like authentication, encryption, and monitoring to address these. Fortunately, advances in security like hardware-based solutions and machine learning help detect and stop threats in real-time, making it easier to stay safe.
+This ongoing effort is important to protect the integrity, confidentiality, and availability of digital information
+
+
+
+References
+
+Olaniran, B. A., Potter, A., Ross, K. A., & Johnson, B. (2023). A Gamer’s Nightmare: An Analysis of the Sony PlayStation Hacking Crisis. Department of Communication Studies, Texas Tech University. Retrieved from https://www.researchgate.net/publication/287520184_A_Gamer's_Nightmare_An_Analysis_of_the_Sony_PlayStation_Hacking_Crisis
+
+Bock, P., Hauet, J.-P., Françoise, R., & Foley, R. (n.d.). Lessons Learned from the Ukrainian Power Grid Cyberattack. Retrieved from https://blog.isa.org/lessons-learned-forensic-analysis-ukrainian-power-grid-cyberattack-malware
+Dang, F., Yan, L., & Yang, Y. (2023). Research on Intelligent Centralized System Based on Security Architecture of Computer Cloud Security Protection. IEEE. Retrieved from https://www-accessengineeringlibrary-com.uproxy.library.dc-uoit.ca/content/book/9780071836906/chapter/chapter1
+Latto, N. (2023). Case Study: What We've Learned from the Target Data Breach of 2013. CardConnect. Retrieved from https://www.cardconnect.com/launchpointe/payment-trends/target-data-breach/
+Meng, D., Hou, R., Shi, G., Tu, B., Yu, A., Zhu, Z., Jia, X., & Liu, P. (2018). Security-first architecture: Deploying physically isolated active security processors for safeguarding the future of computing. Cybersecurity, 1(2). Retrieved from https://cybersecurity.springeropen.com/articles/10.1186/s42400-018-0001-z
+Ponomarev, D. (2020). A Primer on Security Threats for Computer Architects. Computer Architecture Today. Retrieved from https://www.sigarch.org/a-primer-on-security-threats-for-computer-architects/
+Fortinet. (n.d.). Understanding the Underlying Causes of Complexity in Security. Retrieved from https://www.fortinet.com/content/dam/fortinet/assets/ebook/eb-understanding-the-underlying-causes-of-complexity-in-security.pdf
+Krebs on Security. (2023). The Equifax Breach: What You Should Know. Retrieved from https://krebsonsecurity.com/2017/09/the-equifax-breach-what-you-should-know/
+Avast. (2020). What are the Meltdown and Spectre Vulnerabilities? Retrieved from https://www.avast.com/c-meltdown-spectre#:~
+=are%20still%20reeling.-,Meltdown%20and%20Spectre%20are%20hardware%20vulnerabilities%20created%20by%20accident%20during,that%20function%20a%20little%20differently
+NIST. (2020). Zero Trust Architecture. Special Publication 800-207. Retrieved from https://csrc.nist.gov/publications/detail/sp/800-207/final
+He, B., Guo, Y., Liang, H., Wang, Q., & Xie, G. (2023). Research on Defending Code Reuse Attack Based on Binary Rewriting. IEEE. Retrieved from https://ieeexplore.ieee.org/document/10065883
